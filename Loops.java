@@ -1,6 +1,10 @@
 public class Loops {
     
     // TODO: Schreibe hier die Methoden für die Teilaufgaben.
+
+    public static void primeFactorisation(int n){
+        
+    }
     
     public static void main(String[] args){
         
