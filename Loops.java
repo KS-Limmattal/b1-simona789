@@ -6,7 +6,7 @@ public class Loops {
         if (n <= 1) {
             System.out.println("Number must be greater than 1");
         }
-        System.out.printf("Prime factorisation of %d =" , n);
+        System.out.printf("Prime factorisation of %d = " , n);
         int factor = 2;
         boolean firstfactor = true;
 
@@ -22,25 +22,30 @@ public class Loops {
             }
             factor += 1;
         }
-
+        System.out.println(); //neue Zeile
         }
-    }
     
+
     
     public static void main(String[] args){
         
         // Test-Code für Teilaufgabe c)
         System.out.println("Aufgabe c)");
-        System.out.println(hours(3));
-        System.out.println(hours(75));
+        primeFactorisation(3);
+        primeFactorisation(75);
         // TODO: Schreibe mehr Testcode
-        System.out.println();
-
+        primeFactorisation(51);
+        primeFactorisation(35);
+        primeFactorisation(32);
+    }
+/* 
         // Test-Code für Teilaufgabe d)
         System.out.println("Aufgabe d)");
         for (int n = 0; n < 12; n++){
             System.out.println("Pi approximated to " + n + " digits with pi()  is " + pi(n));
         }
         System.out.println();
-    }
+*/
+    
+
 }
