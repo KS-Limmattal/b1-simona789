@@ -1,7 +1,7 @@
 public class Loops {
     
     // TODO: Schreibe hier die Methoden für die Teilaufgaben.
-
+    // Teilaufgabe c)
     public static void primeFactorisation(int n){
         if (n <= 1) {
             System.out.println("Number must be greater than 1");
@@ -24,7 +24,27 @@ public class Loops {
         }
         System.out.println(); //neue Zeile
         }
+    //Teilaufgabe d)
     
+    public static double pi(int digits){
+        double n = Math.pow(10, digits) / 2.0;
+        if (n < 0){
+            System.out.println("Digits must be a positive integer");
+            return -1;
+        } else {
+            double res = 1.0;
+            double sign= -1.0;
+            for (int i = 0; i < n; i++) {
+                double factor = (sign * 1.0) / (2 * (i + 1) + 1);
+                res = res + factor;
+                sign = sign * (-1);
+            }
+
+            res = res * 4;
+            return res;
+        } 
+        
+    }
 
     
     public static void main(String[] args){
@@ -37,15 +57,14 @@ public class Loops {
         primeFactorisation(51);
         primeFactorisation(35);
         primeFactorisation(32);
-    }
-/* 
+ 
+
         // Test-Code für Teilaufgabe d)
         System.out.println("Aufgabe d)");
         for (int n = 0; n < 12; n++){
             System.out.println("Pi approximated to " + n + " digits with pi()  is " + pi(n));
         }
         System.out.println();
-*/
-    
+    }
 
 }
